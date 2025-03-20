@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+}
+
+.btn {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    height: 50px;
+    padding: var(--space-12) var(--space-52);
+    outline: none;
+    /*ponemos el borde descompuesto pero con color tranparent para que ocupe lo mismo que los botones
+    que tengan borde, lo descomponemos porque si despues solo tenemos que cambiar una opcion es 
+    más fácil*/
+    border-width: 2px;
+    border-style: solid;
+    border-color: transparent;
+    border-radius: var(--border-radius-10);
+    background-color: var(--button-color-main);
+    font-size: 18px;
+    color: var(--color-white);
+    line-height: 1.45;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in;
+
+    &:hover {
+        background-color: var(--button-color-light);
+    }
+
+    &:active {
+        background-color: var(--button-color-dark);
+    }
+
+    &:disabled {
+        opacity: 0.2;
+        cursor: not-allowed;
+    }
+}
+
+.modal {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-white);
+    border-radius: var(--border-radius-20);
+    padding: var(--padding-52) var(--padding-28);
+    gap: var(--space-30);
+}
+
+.title {
+    font-family: var(--font-family);
+    font-weight: var(--font-bold);
+    font-size: var(--font-30);
+    margin: var(--space-0);
+}
+
+.text {
+    font-family: var(--font-family);
+    font-weight: var(--font-regular);
+    font-size: var(--font-18);
+    color: var(--text-color-purple);
+    margin: var(--space-0);
+    text-align: center;
+}
+
+.btn--secondary {
+    border-color: var(--button-color-main);
+    background-color: var(--color-white);
+    color: var(--button-color-main);
+    margin-right: var(--space-20);
+
+    &:hover {
+        border-color: var(--button-color-light);
+        color: var(--button-color-light);
+        background-color: var(--color-white);
+    }
+
+    &:active {
+        border-color: var(--button-color-dark);
+        color: var(--button-color-dark);
+    }
+
+    &:disabled {
+        opacity: 0.2;
+        cursor: not-allowed;
+    }
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    margin: 0;
+}
