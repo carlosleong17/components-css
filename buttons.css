@@ -1,0 +1,76 @@
+.btn {
+    font-family: var(--font-family);
+    font-weight: var(--font-regular);
+    font-style: normal;
+    height: 50px;
+    padding: var(--space-12) var(--space-52);
+    outline: none;
+    /*ponemos el borde descompuesto pero con color tranparent para que ocupe lo mismo que los botones
+    que tengan borde, lo descomponemos porque si despues solo tenemos que cambiar una opcion es 
+    más fácil*/
+    border-width: 2px;
+    border-style: solid;
+    border-color: transparent;
+    border-radius: var(--space-10);
+    background-color: var(--button-color-main);
+    font-size: var(--font-18);
+    color: var(--color-white);
+    line-height: 1.45;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in;
+
+    &:hover {
+        background-color: var(--button-color-light);
+    }
+
+    &:active {
+        background-color: var(--button-color-dark);
+    }
+
+    &:disabled {
+        opacity: 0.2;
+        cursor: not-allowed;
+    }
+}
+
+.btn--secondary {
+    border-color: var(--button-color-main);
+    background-color: var(--color-white);
+    color: var(--button-color-main);
+
+    &:hover {
+        border-color: var(--button-color-light);
+        color: var(--button-color-light);
+        background-color: var(--color-white);
+    }
+
+    &:active {
+        border-color: var(--button-color-dark);
+        color: var(--button-color-dark);
+    }
+
+    &:disabled {
+        opacity: 0.2;
+        cursor: not-allowed;
+    }
+}
+
+.text--link {
+    border: none;
+    background-color: var(--color-white);
+    color: var(--button-color-main);
+
+    &:hover {
+        color: var(--button-color-light);
+        background-color: transparent;
+    }
+
+    &:active {
+        color: var(--button-color-dark);
+    }
+
+    &:disabled {
+        opacity: 0.2;
+        cursor: not-allowed;
+    }
+}

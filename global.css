@@ -1,0 +1,41 @@
+:root {
+
+    /* -----> Colors */
+    --color-blue: hsl(213, 100%, 56%);
+    --color-blue-ligth: hsl(213, 100%, 65%);
+    --color-blue-dark: hsl(213, 92%, 41%);
+    --color-white: hsl(213, 100%, 100%);
+
+    /* -----> Spacing */
+    --space-10: 10px;
+    --space-12: 12px;
+    --space-20: 20px;
+    --space-52: 52px;
+
+    /* -----> Buttons */
+    --button-color-main: var(--color-blue);
+    --button-color-light: var(--color-blue-ligth);
+    --button-color-dark: var(--color-blue-dark);
+
+    /* -----> Font */
+    --font-family: "Poppins", sans-serif;
+    
+    --font-regular: 400;
+
+    --font-18: 18px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+html {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+} 
+    
